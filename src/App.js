@@ -31,7 +31,9 @@ class App extends Component {
   }
 
   handleAddProject(project){
-    console.log(project);
+    const { projects } = this.state;
+    projects.push(project);
+    this.setState({projects:projects});
   }
 
   render() {

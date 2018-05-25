@@ -27,7 +27,7 @@ handleSubmit(e){
 
   render() {
     let categoryOpts = this.props.categories.map(category => {
-      return <option key={category} value="category">{category}</option>
+      return <option key={category} value={category}>{category}</option>
     });
     return (
       <div className="">
